@@ -8,7 +8,7 @@ int main() {
     char  cidade_1[50], cidade_2[50];
     int   populacao_1, populacao_2;
     float densidade_populacional1, densidade_populacional2;
-    float pib_per_capita1, pib_per_capita2; // Corrigido de pip para pib
+    float pib_per_capita1, pib_per_capita2; 
     float area_1, area_2;
     float pib_1, pib_2;
     int pontos_turisticos_1, pontos_turisticos_2;
@@ -19,7 +19,7 @@ int main() {
     printf("\n========== Primeira Carta ==========\n");
 
     printf("Estado: ");
-    scanf(" %s", estado_1); // Em arrays de char (strings), não é obrigatório o uso do &
+    scanf(" %s", estado_1); 
 
     printf("Codigo: ");
     scanf(" %s", codigo_1);
@@ -63,11 +63,11 @@ int main() {
     printf("Pontos Turisticos: ");
     scanf(" %d", &pontos_turisticos_2);
 
-    // Calcula e Armazena a Densidade Populacional (População / Área)
+    // Calcula e Armazena a Densidade Populacional 
     densidade_populacional1 = (float)populacao_1 / area_1;
     densidade_populacional2 = (float)populacao_2 / area_2;
 
-    // Calcula e Armazena o PIB Per Capita (PIB / População)
+    // Calcula e Armazena o PIB Per Capita 
     pib_per_capita1 = pib_1 / (float)populacao_1;
     pib_per_capita2 = pib_2 / (float)populacao_2;
 
